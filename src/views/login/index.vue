@@ -83,7 +83,7 @@ export default {
   data () {
     return {
       user: {
-        mobile: '13911111111', // 手机号
+        mobile: '', // 手机号
         code: '246810' // 验证码
       },
       userFormRules: {
@@ -126,7 +126,7 @@ export default {
 
         // 登录成功，跳转回原来页面
         // back 的方式不严谨，后面讲功能优化的时候再说
-        // this.$router.back()
+        this.$router.back()
       } catch (err) {
         if (err.response.status === 400) {
           this.$toast.fail('手机号或验证码错误')
