@@ -7,7 +7,11 @@ import Vant from 'vant'
 // 加载全局样式
 import './styles/index.less'
 
+// 加载 vant 全局样式
 import 'vant/lib/index.css'
+
+// 加载动态设置REM基准值
+import 'amfe-flexible'
 
 Vue.use(Vant)
 
